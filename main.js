@@ -30,13 +30,7 @@ window.addEventListener("load", function() {
 
     let canvas = document.createElement("canvas");
     canvas.id = "thedark_superfastsprites";
-    // canvas.style.display = "none";
-    canvas.style.position = "fixed";
-    canvas.style.top = "0px";
-    canvas.style.left = "0px";
-    canvas.style.zIndex = "1000";
-    canvas.style.display = "block";
-    canvas.style.backgroundColor = "white";
+    canvas.style.display = "none";
     document.body.appendChild(canvas);
 
     let processingInstance = new Processing(canvas, programCode); 
