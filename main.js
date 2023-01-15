@@ -8,6 +8,7 @@ window.addEventListener("load", function() {
 
     let canvas = document.createElement("canvas");
     canvas.id = "thedark_superfastsprites";
+    canvas.style.display = "none";
     document.body.appendChild(canvas);
 
     let processingInstance = new Processing(canvas, programCode); 
@@ -33,11 +34,6 @@ window.addEventListener("load", function() {
         let sprite = get(0, 0, w * scale, h * scale);
         return sprite;
     };
-
-    var exports = {};
-    exports.createSprite = createSprite;
-    
-    Object.defineProperty(exports, "__esModule", { "value": true });
     
     window.createSprite = createSprite;
 });
