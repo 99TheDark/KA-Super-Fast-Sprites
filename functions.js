@@ -1,4 +1,4 @@
-(() => {
+document.body.onload = function() {
     let programCode = function(processingInstance) {
         with(processingInstance) {
             size(400, 400);
@@ -38,4 +38,4 @@
     exports.createSprite = createSprite;
     
     Object.defineProperty(exports, "__esModule", { "value": true });
-})();
+};
