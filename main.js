@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
                     }
                 }
                 let sprite = get(0, 0, w * scale, h * scale);
-                return sprite;
+                return sprite.imageData;
             };
             window.createSprite = createSprite;
         }
