@@ -1,4 +1,4 @@
-(() = {
+(() => {
     console.log("Sucessfully loaded!");
 
     let programCode = function(processingInstance) {
