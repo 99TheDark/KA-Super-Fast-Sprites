@@ -36,3 +36,5 @@ var createSprite = function(data, scale) {
 };
 
 window.createSprite = createSprite;
+
+console.log(window);
