@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
             let createSprite = function(data, scale) { 
                 // @OnlyTheDark
                 // https://www.khanacademy.org/computer-programming/super-fast-sprites/6098556280160256
-                background(255, 255, 255, 0);
+                background(0, 0, 0, 0);
                 noStroke();
                 let px = data.data;
                 const w = px[0].length;
@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
                     }
                 }
                 let sprite = get(0, 0, w * scale, h * scale);
-                return sprite.imageData;
+                return sprite;
             };
             window.createSprite = createSprite;
         }
@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
 
     let canvas = document.createElement("canvas");
     canvas.id = "thedark_superfastsprites";
-    canvas.style.display = "none";
+    // canvas.style.display = "none";
     document.body.appendChild(canvas);
 
     let processingInstance = new Processing(canvas, programCode); 
