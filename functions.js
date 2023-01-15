@@ -38,4 +38,6 @@ document.body.onload = function() {
     exports.createSprite = createSprite;
     
     Object.defineProperty(exports, "__esModule", { "value": true });
+    
+    window.createSprite = createSprite;
 };
