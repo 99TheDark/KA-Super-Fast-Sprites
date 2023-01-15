@@ -7,11 +7,11 @@ var programCode = function(processingInstance) {
     }
 };
 
-let canvas = document.createElement("canvas");
+var canvas = document.createElement("canvas");
 canvas.id = "thedark_superfastsprites";
 document.body.appendChild(canvas);
 
-let processingInstance = new Processing(canvas, programCode); 
+var processingInstance = new Processing(canvas, programCode); 
 
 var createSprite = function(data, scale) { 
     // @OnlyTheDark
