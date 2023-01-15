@@ -1,4 +1,4 @@
-document.body.onload = function() {
+document.body.addEventListener("load", function() {
     let programCode = function(processingInstance) {
         with(processingInstance) {
             size(400, 400);
@@ -40,4 +40,4 @@ document.body.onload = function() {
     Object.defineProperty(exports, "__esModule", { "value": true });
     
     window.createSprite = createSprite;
-};
+});
