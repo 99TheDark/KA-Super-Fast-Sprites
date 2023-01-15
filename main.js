@@ -9,12 +9,12 @@ window.addEventListener("load", function() {
                 background(0, 0, 0, 0);
                 noStroke();
                 let px = data.data;
-                const w = px[0].length;
-                const h = px.length;
+                let w = px[0].length;
+                let h = px.length;
                 scale = scale || floor(min(width / w, height / h));
                 for(let y = 0; y < h; y++) {
                     for(let x = 0; x < w; x++) {
-                        const c = px[y][x];
+                        let c = px[y][x];
                         if(c !== " ") {
                             fill(data[c]);
                             rect(x * scale, y * scale, scale + 0.5, scale + 0.5);
