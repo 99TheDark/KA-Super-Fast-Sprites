@@ -36,5 +36,5 @@
         return sprite;
     };
 
-    // window.createSprite = createSprite;
+    window.createSprite = createSprite;
 })();
