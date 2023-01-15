@@ -35,4 +35,4 @@ var createSprite = function(data, scale) {
     return sprite;
 };
 
-// window.createSprite = createSprite;
+window.createSprite = createSprite;
