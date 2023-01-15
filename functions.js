@@ -1,6 +1,6 @@
 console.log("Sucessfully loaded!");
 
-let programCode = function(processingInstance) {
+var programCode = function(processingInstance) {
     with(processingInstance) {
         size(400, 400);
         noSmooth();
