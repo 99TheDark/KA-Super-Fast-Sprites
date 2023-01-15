@@ -1,4 +1,4 @@
-document.body.addEventListener("load", function() {
+window.addEventListener("load", function() {
     let programCode = function(processingInstance) {
         with(processingInstance) {
             size(400, 400);
