@@ -34,6 +34,8 @@ window.addEventListener("load", function() {
     canvas.style.position = "fixed";
     canvas.style.top = "0px";
     canvas.style.left = "0px";
+    canvas.style.zIndex = "1000";
+    canvas.style.display = "block";
     document.body.appendChild(canvas);
 
     let processingInstance = new Processing(canvas, programCode); 
